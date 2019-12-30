@@ -12,4 +12,9 @@ export class Satellite {
         this.orbitType = orbitType;
     }
 
+    shouldShowWarning():boolean {
+        return (
+            this.type.toLowerCase() === 'space debris'
+        )
+    }
 };
